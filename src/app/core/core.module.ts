@@ -27,6 +27,7 @@ registerLocaleData(zh);
   ],
   exports: [
     ShareModule,
+    AppRoutingModule
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN }],
 })

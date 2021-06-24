@@ -1,0 +1,62 @@
+#app {
+  height: 100%;
+}
+
+.layout {
+  height: 100%;
+
+  .header {
+    color: #fff;
+
+    .main-title {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+      font-family: 'Futura LT Medium';
+    }
+
+    .header-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .left-wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .right-wrapper {
+        display: flex;
+        align-items: center;
+
+        .search-bar {
+          .search-group {
+            border-radius: 100vh;
+          }
+        }
+
+        .nav-btns {
+          margin-left: 1rem;
+          display: flex;
+          align-items: center;
+
+          .nav-btn {
+            cursor: pointer;
+            color: #aaa;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .footer {
+    .footer-content {
+      text-align: center;
+    }
+  }
+}
