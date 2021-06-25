@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="home-page">
+  <app-ncm-carousel #ncmCarousel (changeSlide)="onChangeSlide($event)" [activeIndex]="carouselActiveIndex">
+    <nz-carousel #carousel nzAutoPlay nzEffect="fade" [nzDotRender]="ncmCarousel.dotRef"
+      (nzBeforeChange)="onBeforeChange($event)">
+      <div nz-carousel-content class="carousel-item" *ngFor="let item of bannerList">
+        <a [href]="item.url" class="banner-item">
+          <img [src]="item.imageUrl" alt="">
+        </a>
+      </div>
+    </nz-carousel>
+  </app-ncm-carousel>
+</div>
