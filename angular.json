@@ -99,6 +99,7 @@
               "browserTarget": "ng-ncm:build:production"
             },
             "development": {
+              "hmr": true,
               "browserTarget": "ng-ncm:build:development"
             }
           },

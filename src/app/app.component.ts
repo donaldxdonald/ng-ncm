@@ -1,15 +1,6 @@
+import { NavItem } from './data-types/common.types';
 import { Component } from '@angular/core';
 
-class NavItem {
-  name: string;
-  label: string;
-  linkTo: string;
-  constructor(name: string, label: string, linkTo: string) {
-    this.name = name
-    this.label = label
-    this.linkTo = linkTo
-  }
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -17,9 +8,25 @@ class NavItem {
 })
 export class AppComponent {
   navList: Array<NavItem> = [
-    new NavItem('Hot', '发现音乐', '/hot'),
-    new NavItem('My', '我的音乐', '/my'),
-    new NavItem('Friend', '朋友', '/friend'),
-    new NavItem('Store', '商城', '/store'),
+    {
+      name: 'Hot',
+      label: '发现音乐',
+      linkTo: '/hot'
+    },
+    {
+      name: 'My',
+      label: '我的音乐',
+      linkTo: '/my'
+    },
+    {
+      name: 'Friend',
+      label: '朋友',
+      linkTo: '/friend'
+    },
+    {
+      name: 'Store',
+      label: '商城',
+      linkTo: '/store'
+    }
   ]
 }

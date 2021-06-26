@@ -1,0 +1,12 @@
+<ng-container>
+  <a href="" class="cover">
+    <img [src]="itemData.picUrl" [alt]="itemData.name" class="item-img">
+    <div class="item-info">
+      <div class="figure">
+        <i class="icon erji"></i>
+        <p class="item-count">{{ itemData.playCount }}</p>
+      </div>
+    </div>
+  </a>
+  <span class="item-label">{{ itemData.name }}</span>
+</ng-container>

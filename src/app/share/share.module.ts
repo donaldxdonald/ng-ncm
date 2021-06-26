@@ -1,3 +1,4 @@
+import { NcmUiModule } from './ncm-ui/ncm-ui.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -19,7 +20,8 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     NzMenuModule,
     NzInputModule,
     NzIconModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NcmUiModule
   ],
   exports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { NzCarouselModule } from 'ng-zorro-antd/carousel';
     NzMenuModule,
     NzInputModule,
     NzIconModule,
-    NzCarouselModule
+    NzCarouselModule,
+    NcmUiModule
   ]
 })
 export class ShareModule { }

@@ -9,4 +9,33 @@
       </div>
     </nz-carousel>
   </app-ncm-carousel>
+  <div class="main-wrapper">
+    <div class="left-wrapper">
+      <div class="section-hot">
+        <div class="section-header">
+          <div class="section-navs">
+            <h2>
+              <i nz-icon nzType="compass" nzTheme="outline"></i>
+              <a href="">热门推荐</a>
+            </h2>
+            <nav>
+              <a href="" *ngFor="let item of tagCates">{{ item.name }}</a>
+            </nav>
+          </div>
+          <div class="section-btns">
+            <div class="section-btn section-btn-more">
+              <a href="">
+                <span class="btn-text">更多</span>
+                <i nz-icon nzType="arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <app-show-item *ngFor="let item of rcmLists" [itemData]="item"></app-show-item>
+        </div>
+      </div>
+    </div>
+    <div class="right-wrapper">111</div>
+  </div>
 </div>

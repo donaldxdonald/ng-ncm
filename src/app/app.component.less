@@ -1,12 +1,11 @@
-#app {
-  height: 100%;
-}
-
 .layout {
-  height: 100%;
-
+  position: relative;
   .header {
+    position: sticky;
+    left: 0;
+    top: 0;
     color: #fff;
+    z-index: 99;
 
     .main-title {
       font-size: 1.5rem;
@@ -48,10 +47,6 @@
         }
       }
     }
-  }
-
-  .content {
-    flex: 1;
   }
 
   .footer {
