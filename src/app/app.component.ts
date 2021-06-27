@@ -1,5 +1,5 @@
-import { NavItem } from './data-types/common.types';
-import { Component } from '@angular/core';
+import { NavItem } from './data-types/common.types'
+import { Component } from '@angular/core'
 
 @Component({
   selector: 'app-root',

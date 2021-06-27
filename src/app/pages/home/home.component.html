@@ -36,6 +36,23 @@
         </div>
       </div>
     </div>
-    <div class="right-wrapper">111</div>
+    <div class="right-wrapper">
+      <div class="panel panel-singer">
+        <h3 class="panel-header">
+          <div class="panel-title">入驻歌手</div>
+          <div class="panel-btn">
+            <a href="" class="btn-text">
+              <span>查看全部</span>
+              <i nz-icon nzType="right"></i>
+            </a>
+          </div>
+        </h3>
+        <div class="panel-content">
+          <div class="content-list">
+            <app-singer *ngFor="let item of singers" [singerData]="item"></app-singer>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

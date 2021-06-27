@@ -1,0 +1,35 @@
+@import "../../../../../assets/styles/varibles.less";
+.singer-item {
+  @itemHeight: 62px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  height: @itemHeight;
+  margin-top: 14px;
+  .singer-img {
+    width: @itemHeight;
+    height: @itemHeight;
+    object-fit: cover;
+  }
+  .singer-info {
+    height: 100%;
+    flex: 1;
+    padding-left: 14px;
+    border: 1px solid @border-color-base;
+    .singer-name {
+      font-size: @font-size-base;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+    .singer-label {
+      font-size: @font-size-sm;
+      width: 90%;
+      margin-top: 5px;
+    }
+  }
+}
+.singer-item:hover {
+  background-color: #f4f4f4;
+}

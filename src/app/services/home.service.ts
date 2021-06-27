@@ -1,12 +1,12 @@
-import { Banner, PlaylistTagCate, PlaylistShowItem } from './../data-types/common.types';
-import { ServicesModule, API_CONFIG } from './services.module';
-import { Inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Banner, PlaylistTagCate, PlaylistShowItem } from './../data-types/common.types'
+import { ServicesModule, API_CONFIG } from './services.module'
+import { Inject, Injectable } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
+import { Observable } from 'rxjs'
+import { map } from 'rxjs/operators'
 
 @Injectable({
-  providedIn: ServicesModule,
+  providedIn: ServicesModule
 })
 export class HomeService {
   constructor(
@@ -17,7 +17,7 @@ export class HomeService {
   fetchBanners(): Observable<Banner[]> {
     return this.http
       .get(`${this.baseURL}banner`)
-      .pipe(map((res: any) => res.banners));
+      .pipe(map((res: any) => res.banners))
   }
 
   fetchTagCates(): Observable<PlaylistTagCate[]> {

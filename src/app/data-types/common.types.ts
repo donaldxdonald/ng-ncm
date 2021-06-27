@@ -22,3 +22,11 @@ export type PlaylistShowItem = {
   picUrl: string;
   playCount: number
 }
+
+export type Singer = {
+  name: string;
+  id: number;
+  picUrl: string;
+  albumSize: number;
+  briefDesc: string
+}

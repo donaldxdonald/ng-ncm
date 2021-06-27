@@ -1,12 +1,13 @@
-import { ShowItemComponent } from './show-item/show-item.component';
-import { NgModule } from '@angular/core';
+import { PlayCountPipe } from './../pipes/play-count.pipe'
+import { ShowItemComponent } from './show-item/show-item.component'
+import { NgModule } from '@angular/core'
 
 
 
 @NgModule({
-  declarations: [ShowItemComponent],
+  declarations: [ShowItemComponent, PlayCountPipe],
   imports: [
   ],
-  exports: [ShowItemComponent]
+  exports: [ShowItemComponent, PlayCountPipe]
 })
 export class NcmUiModule { }

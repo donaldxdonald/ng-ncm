@@ -1,10 +1,11 @@
-import { PlaylistShowItem } from './../../../data-types/common.types';
-import { Component, Input, OnInit } from '@angular/core';
+import { PlaylistShowItem } from './../../../data-types/common.types'
+import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-show-item',
   templateUrl: './show-item.component.html',
-  styleUrls: ['./show-item.component.less']
+  styleUrls: ['./show-item.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShowItemComponent implements OnInit {
   @Input() itemData: PlaylistShowItem;

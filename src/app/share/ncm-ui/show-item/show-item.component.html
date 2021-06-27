@@ -1,12 +1,16 @@
 <ng-container>
-  <a href="" class="cover">
-    <img [src]="itemData.picUrl" [alt]="itemData.name" class="item-img">
+  <div class="cover">
+    <div class="img-wrapper">
+      <img [src]="itemData.picUrl" [alt]="itemData.name" class="item-img">
+      <a href="" class="img-mask"></a>
+    </div>
     <div class="item-info">
       <div class="figure">
         <i class="icon erji"></i>
-        <p class="item-count">{{ itemData.playCount }}</p>
+        <span class="item-count">{{ itemData.playCount | playCount }}</span>
       </div>
+      <i class="icon play"></i>
     </div>
-  </a>
-  <span class="item-label">{{ itemData.name }}</span>
+  </div>
+  <div class="item-label">{{ itemData.name }}</div>
 </ng-container>

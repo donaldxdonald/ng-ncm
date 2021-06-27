@@ -1,5 +1,5 @@
-import { InjectionToken, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { InjectionToken, NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
 
 export const API_CONFIG = new InjectionToken('BaseApiToken')
 
